@@ -29,7 +29,7 @@ export default [
           </aside>
 
           <ul className="m-3 list-disc">
-            <li>Lead 10 person team of engineers</li>
+            <li>Lead a 10 person team of engineers</li>
             <li>
               Authored internal documentation about Accessibility, React, React
               Testing Library, coding standards and best practices.
