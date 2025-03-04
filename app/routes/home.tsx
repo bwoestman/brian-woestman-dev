@@ -1,43 +1,38 @@
-import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
 import type { Route } from "./+types/home";
-import {
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineSeparator,
-} from "@mui/lab";
-import Experience from "./experience";
+import ExperienceCard from "~/components/ExperienceCard";
+import employmentData from "../data/employment";
 
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Brian Woestman - Dev" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Welcome!" },
   ];
 }
 
 export default function Home() {
   return (
     <main className="grid">
-      <section className="p-3">
+      <section className="3 m-5">
         <h1 className="text-4xl font-bold">Brian Woestman</h1>
-        <h2 className="text-2xl">Frontend Developer </h2>
-        <article className="p-2">
+        <h2 className="text-2xl">Senior Software Engineer</h2>
+        <h3 className="text-lg">Tech Lead</h3>
+        <article>
           <p>
-            Stinky cat leave fur on owners clothes yet refuse to come home when
-            humans are going to bed; stay out all night then yowl like i am
-            dying at 4am please stop looking at your phone and pet me. Kitty
-            power in the middle of the night i crawl onto your chest and purr
-            gently to help you sleep. Human is behind a closed door, emergency!
-            abandoned! meeooowwww!!!
+            Full stack engineer with a decade of experience continuously
+            delivering performant, scalable and maintainable software. At A2Z
+            Sync I just wrapped up the launch of Amazon Autos, amplifying the
+            car buying experience to a new level!
           </p>
-          <p className="pt-2">Feel free to reach out!</p>
+          <p className="mt-2">Let's build something together!</p>
+          <img
+            src="/assets/wall-burst.png"
+            alt="Brian bursting through the wall!"
+          />
         </article>
-      </section>
-      <img src="/assets/wall-burst.png" alt="" />
-      <section className="p-3">
-        <Experience />
+
+        {employmentData.map((job) => (
+          <ExperienceCard {...{ ...job }} />
+        ))}
       </section>
     </main>
   );
