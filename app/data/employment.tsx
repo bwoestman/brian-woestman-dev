@@ -2,7 +2,7 @@ export default [
   {
     company: "A2Z Sync",
     dates: ["2021", "2025"] as [string, string],
-    titles: ["Tech Lead", "Senior Software Engineer"],
+    titles: ["Senior Software Engineer", "Tech Lead"],
     description: {
       title: "Amazon Autos",
       content: (
@@ -28,18 +28,16 @@ export default [
             </p>
           </aside>
 
-          <article className="mt-2">
-            <ul className="list-disc">
-              <li>Lead 10 person team of engineers</li>
-              <li>
-                Authored internal documentation about Accessibility, React,
-                React Testing Library, coding standards and best practices.
-              </li>
-              <li>Created reactive and responsive web applications.</li>
-              <li>Built and maintained React applications.</li>
-              <li>Reduced developer downtime by improving localhost latency</li>
-            </ul>
-          </article>
+          <ul className="m-3 list-disc">
+            <li>Lead 10 person team of engineers</li>
+            <li>
+              Authored internal documentation about Accessibility, React, React
+              Testing Library, coding standards and best practices.
+            </li>
+            <li>Created reactive and responsive web applications.</li>
+            <li>Built and maintained React applications.</li>
+            <li>Reduced developer downtime by improving localhost latency</li>
+          </ul>
         </>
       ),
     },
@@ -52,7 +50,7 @@ export default [
       title: "Doin' that DAM thing!",
       content: (
         <>
-          <ul className="list-disc">
+          <ul className="m-3 list-disc">
             <li>
               Maintained a Digital Asset Management system used by 100, 000
               daily users and over 700 global brands.
@@ -86,7 +84,7 @@ export default [
       title: "Wi-5 Captive Portal!",
       content: (
         <>
-          <ul className="list-disc">
+          <ul className="m-3 list-disc">
             <li>
               Built administrative dashboards to enable client management and
               real-time data visualization.

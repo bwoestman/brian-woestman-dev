@@ -13,18 +13,19 @@ export default function Home() {
   return (
     <main className="grid">
       <section className="3 m-5">
-        <h1 className="text-4xl font-bold">Brian Woestman</h1>
+        <h1 className="text-4xl font-bold sm:text-5xl">Brian Woestman</h1>
         <h2 className="text-2xl">Senior Software Engineer</h2>
         <h3 className="text-lg">Tech Lead</h3>
-        <article>
+        <article className="mt-3">
           <p>
             Full stack engineer with a decade of experience continuously
             delivering performant, scalable and maintainable software. At A2Z
             Sync I just wrapped up the launch of Amazon Autos, amplifying the
             car buying experience to a new level!
           </p>
-          <p className="mt-2">Let's build something together!</p>
+          <p className="mt-3 text-lg">Let's build something together!</p>
           <img
+            className="mt-3"
             src="/assets/wall-burst.png"
             alt="Brian bursting through the wall!"
           />

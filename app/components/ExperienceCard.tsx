@@ -21,16 +21,21 @@ export default function ({
 
   return (
     <article className="mt-5">
-      <h2 className="text-mdxl">{company}</h2>
+      <h2 className="text-lg">{company}</h2>
 
       {titles.map((title, index) => (
-        <h3 className={classNames("text-2xl", { "text-4xl": index === 0 })}>
+        <h3
+          className={classNames({
+            "text-2xl": index === 0,
+            "text-lg": index !== 0,
+          })}
+        >
           {title}
         </h3>
       ))}
 
       <time dateTime="2025-09">{`${startDate} - ${endDate}`}</time>
-      <article>
+      <article className="mt-3">
         <h4 className="text-lg">{description.title}</h4>
         {description.content}
       </article>
