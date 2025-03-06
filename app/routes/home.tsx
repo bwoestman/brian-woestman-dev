@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="m-auto grid max-w-screen-lg">
       <section className="m-5">
-        <div className="flex justify-around">
+        <div className="flex justify-around md:justify-between">
           <div>
             <h1 className="text-4xl font-bold sm:text-5xl">Brian Woestman</h1>
             <h2 className="text-2xl">Senior Software Engineer</h2>
