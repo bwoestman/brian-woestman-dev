@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="grid">
+    <main className="m-auto grid max-w-screen-lg">
       <section className="3 m-5">
         <h1 className="text-4xl font-bold sm:text-5xl">Brian Woestman</h1>
         <h2 className="text-2xl">Senior Software Engineer</h2>
