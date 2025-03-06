@@ -25,6 +25,7 @@ export default function ({
 
       {titles.map((title, index) => (
         <h3
+          key={title}
           className={classNames({
             "text-2xl": index === 0,
             "text-lg": index !== 0,
