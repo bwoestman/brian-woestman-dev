@@ -28,10 +28,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-around">
             <a href="https://www.linkedin.com/in/bdub1897/">
-              <FontAwesomeIcon icon={faGithub} size="xl" />
+              <FontAwesomeIcon icon={faLinkedin} size="xl" />
             </a>
             <a href="https://github.com/bwoestman">
-              <FontAwesomeIcon icon={faLinkedin} size="xl" />
+              <FontAwesomeIcon icon={faGithub} size="xl" />
             </a>
           </div>
         </div>
